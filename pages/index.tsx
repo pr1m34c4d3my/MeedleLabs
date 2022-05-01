@@ -4,81 +4,61 @@ import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="bg-gray-100 min-h-screen">
+      <nav className="bg-white py-1">
+        <div className="container mx-auto">
+          <div className="flex item-center">
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+            <div className="w-2/12 flex items-center ">
+              <img src="/meedlelabs-04 1.png" alt="" className="w-full" />
+            </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+            <div className="w-6/12 flex items-center ">
+              
+            </div>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <div className="w-4/12 flex right">
+              <ul className="space-x-10 flex items-center  ">
+                <li>
+                  <a href="#" className="w-full">
+                    <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.6968 5.50322C25.2467 5.05329 24.6364 4.80054 24 4.80054C23.3636 4.80054 22.7533 5.05329 22.3032 5.50322L5.50321 22.3032C5.06603 22.7559 4.82412 23.3621 4.82959 23.9914C4.83506 24.6207 5.08746 25.2226 5.53244 25.6676C5.97742 26.1126 6.57937 26.365 7.20864 26.3704C7.83792 26.3759 8.44416 26.134 8.89681 25.6968L9.60001 24.9936V40.8C9.60001 41.4365 9.85286 42.047 10.303 42.4971C10.753 42.9472 11.3635 43.2 12 43.2H16.8C17.4365 43.2 18.047 42.9472 18.4971 42.4971C18.9471 42.047 19.2 41.4365 19.2 40.8V36C19.2 35.3635 19.4529 34.7531 19.903 34.303C20.353 33.8529 20.9635 33.6 21.6 33.6H26.4C27.0365 33.6 27.647 33.8529 28.0971 34.303C28.5471 34.7531 28.8 35.3635 28.8 36V40.8C28.8 41.4365 29.0529 42.047 29.5029 42.4971C29.953 42.9472 30.5635 43.2 31.2 43.2H36C36.6365 43.2 37.247 42.9472 37.6971 42.4971C38.1471 42.047 38.4 41.4365 38.4 40.8V24.9936L39.1032 25.6968C39.5558 26.134 40.1621 26.3759 40.7914 26.3704C41.4206 26.365 42.0226 26.1126 42.4676 25.6676C42.9125 25.2226 43.165 24.6207 43.1704 23.9914C43.1759 23.3621 42.934 22.7559 42.4968 22.3032L25.6968 5.50322V5.50322Z" fill="#0061FF"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="w-full">
+                    <svg className="hover:fill-blue-600 " width="33" height="35" viewBox="0 0 42 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.75 20.4348C31.7459 22.2173 26.3977 23.1308 21 23.125C15.4297 23.125 10.115 22.1692 5.25 20.4348H36.75ZM28 9.25004V6.16671C28 5.34896 27.6313 4.5647 26.9749 3.98646C26.3185 3.40822 25.4283 3.08337 24.5 3.08337H17.5C16.5717 3.08337 15.6815 3.40822 15.0251 3.98646C14.3687 4.5647 14 5.34896 14 6.16671V9.25004H28ZM21 18.5H21.0175H21ZM8.75 30.8334H33.25C34.1783 30.8334 35.0685 30.5085 35.7249 29.9303C36.3813 29.352 36.75 28.5678 36.75 27.75V12.3334C36.75 11.5156 36.3813 10.7314 35.7249 10.1531C35.0685 9.57489 34.1783 9.25004 33.25 9.25004H8.75C7.82174 9.25004 6.9315 9.57489 6.27513 10.1531C5.61875 10.7314 5.25 11.5156 5.25 12.3334V27.75C5.25 28.5678 5.61875 29.352 6.27513 29.9303C6.9315 30.5085 7.82174 30.8334 8.75 30.8334Z" stroke="#B6B6B6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="w-full">
+                    <svg className="hover:fill-blue-600 "width="35" height="35" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.2917 17.625V13.7083C33.2917 12.6695 32.879 11.6733 32.1445 10.9388C31.41 10.2043 30.4138 9.79163 29.375 9.79163H9.79167C8.7529 9.79163 7.75668 10.2043 7.02216 10.9388C6.28765 11.6733 5.875 12.6695 5.875 13.7083V25.4583C5.875 26.4971 6.28765 27.4933 7.02216 28.2278C7.75668 28.9623 8.7529 29.375 9.79167 29.375H13.7083C13.7083 29.375 13.7083 20.1279 14.4615 18.7721C15.2147 17.4164 33.2917 17.625 33.2917 17.625ZM17.625 37.2083H37.2083C38.2471 37.2083 39.2433 36.7956 39.9778 36.0611C40.7124 35.3266 41.125 34.3304 41.125 33.2916V21.5416C41.125 20.5029 40.7124 19.5066 39.9778 18.7721C39.2433 18.0376 38.2471 17.625 37.2083 17.625H17.625C16.5862 17.625 15.59 18.0376 14.8555 18.7721C14.121 19.5066 13.7083 20.5029 13.7083 21.5416V33.2916C13.7083 34.3304 14.121 35.3266 14.8555 36.0611C15.59 36.7956 16.5862 37.2083 17.625 37.2083ZM31.3333 27.4166C31.3333 28.4554 30.9207 29.4516 30.1862 30.1861C29.4516 30.9206 28.4554 31.3333 27.4167 31.3333C26.3779 31.3333 25.3817 30.9206 24.6472 30.1861C23.9126 29.4516 23.5 28.4554 23.5 27.4166C23.5 26.3779 23.9126 25.3816 24.6472 24.6471C25.3817 23.9126 26.3779 23.5 27.4167 23.5C28.4554 23.5 29.4516 23.9126 30.1862 24.6471C30.9207 25.3816 31.3333 26.3779 31.3333 27.4166Z" stroke="#B6B6B6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="w-full">
+                    <svg className="hover:fill-blue-600 "width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18H12.015H12ZM18 18H18.015H18ZM24 18H24.015H24ZM31.5 18C31.5 24.627 25.455 30 18 30C15.793 30.0075 13.6122 29.5211 11.6175 28.5765L4.5 30L6.5925 24.42C5.268 22.563 4.5 20.361 4.5 18C4.5 11.373 10.545 6 18 6C25.455 6 31.5 11.373 31.5 18Z" stroke="#B6B6B6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="w-full">
+                    <svg className="hover:fill-blue-600 "width="33" height="33" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 25.5H13.5M22.5 25.5H30L27.8925 23.3925C27.6095 23.1094 27.385 22.7734 27.2319 22.4035C27.0787 22.0337 26.9999 21.6373 27 21.237V16.5C27.0002 14.6384 26.4234 12.8225 25.3488 11.3023C24.2743 9.78215 22.755 8.63245 21 8.0115V7.5C21 6.70435 20.6839 5.94129 20.1213 5.37868C19.5587 4.81607 18.7956 4.5 18 4.5C17.2044 4.5 16.4413 4.81607 15.8787 5.37868C15.3161 5.94129 15 6.70435 15 7.5V8.0115C11.505 9.2475 9 12.582 9 16.5V21.2385C9 22.0455 8.679 22.821 8.1075 23.3925L6 25.5H13.5H22.5ZM22.5 25.5V27C22.5 28.1935 22.0259 29.3381 21.182 30.182C20.3381 31.0259 19.1935 31.5 18 31.5C16.8065 31.5 15.6619 31.0259 14.818 30.182C13.9741 29.3381 13.5 28.1935 13.5 27V25.5H22.5Z" stroke="#B6B6B6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+      </nav>
     </div>
   )
 }
