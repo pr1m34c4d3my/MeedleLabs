@@ -59,6 +59,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </nav>
+
+      <h1 className='font-black'>Hello World!</h1>
     </div>
   )
 }
