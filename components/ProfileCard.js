@@ -1,7 +1,7 @@
 export default function ProfileCard(){
     return(
         <card className="flex">
-            <div className="px-3 py-3 w-3/12 bg-white rounded">
+            <div className="container px-3 py-3 w-3/12 bg-white rounded">
                 <img src="/profile-bg.png" className="w-full rounded"/>
                     <div className="flex">
                         <img src="/profile-pic.png" className="flex pl-4 -mt-6 w-24 h-20"/>
@@ -25,7 +25,7 @@ export default function ProfileCard(){
                             <h2 className="font-semibold text-xs">Contributions</h2>
                         </div>
                     </div>
-                    <div>
+                    <div className="container">
                         <h2 className="font-semibold text-sm pb-2 pt-8">Top Donations</h2>
                             <div className="flex bg-gray-200 rounded w-full items-center">
                                 <img src="/top-donation.png" className="flex w-28 rounded" />
@@ -37,7 +37,21 @@ export default function ProfileCard(){
                                 <h1 className="font-black ml-1 text-xl text-[#0061FF]">4</h1>
                             </div>
                     </div>
-                
+                    <div className="container">
+                        <h2 className="font-semibold text-sm pb-2 pt-8">Skills</h2>
+                            <div className="container">
+                                <ul className="relative">
+                                    <li className="bg-gray-200 max-w-max px-6 rounded-full items-center"><a href="">UI/UX</a></li>
+                                    <li className="bg-gray-200 max-w-max px-6 rounded-full items-center"><a href="">Fullstack Developer</a></li>
+                                    <li className="bg-gray-200 max-w-max px-6 rounded-full items-center"><a href="">NFTs Development</a></li>
+                                    <li className="bg-gray-200 max-w-max px-6 rounded-full items-center"><a href="">Discord Bots</a></li>
+                                    <li className="bg-gray-200 max-w-max px-6 rounded-full items-center"><a href="">+5 Other Skills</a></li>
+                                </ul>
+                            </div>    
+                    </div>
+                    <div className="container">
+                        <h2 className="font-semibold text-sm pb-2 pt-8">Portofolios</h2>
+                    </div>
             </div>
         </card>
     );
