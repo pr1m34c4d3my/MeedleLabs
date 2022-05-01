@@ -1,6 +1,5 @@
 export default function ProfileCard(){
     return(
-        <card className="flex">
             <div className="container px-3 py-3 w-3/12 bg-white rounded">
                 <img src="/profile-bg.png" className="w-full rounded"/>
                     <div className="flex">
@@ -53,6 +52,5 @@ export default function ProfileCard(){
                         <h2 className="font-semibold text-sm pb-2 pt-8">Portofolios</h2>
                     </div>
             </div>
-        </card>
     );
 }
