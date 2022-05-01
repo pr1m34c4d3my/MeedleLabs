@@ -25,6 +25,18 @@ export default function ProfileCard(){
                             <h2 className="font-semibold text-xs">Contributions</h2>
                         </div>
                     </div>
+                    <div>
+                        <h2 className="font-semibold text-sm pb-2 pt-8">Top Donations</h2>
+                            <div className="flex bg-gray-200 rounded w-full items-center">
+                                <img src="/top-donation.png" className="flex w-28 rounded" />
+                                    <div className="block ml-4">
+                                        <h1 className="font-bold text-sm">WWF Foundation</h1>
+                                        <h2 className="font-reguler text-xs">Save the tigers charity.</h2>
+                                    </div>
+                                <img src="/eth.png" className="flex ml-12 w-2" />
+                                <h1 className="font-black ml-1 text-xl text-[#0061FF]">4</h1>
+                            </div>
+                    </div>
                 
             </div>
         </card>

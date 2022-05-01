@@ -19,6 +19,6 @@
         "@components/*": ["components/*"]
       }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_document.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_document.js", "components/ProfileCard.js"],
   "exclude": ["node_modules"]
 }
