@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="bg-white py-1">
+    <nav className="sticky top-0 bg-white py-1 shadow-lg">
       <div className="container mx-auto">
         <div className="item-center flex">
           <div className="flex w-2/12 items-center ">
