@@ -12,7 +12,6 @@ const Home: NextPage = () => {
       <div className="container mx-auto justify-center pt-10">
         <div className="flex justify-center">
           <ProfileCard />
-
           <Timeline />
         </div>
       </div>
