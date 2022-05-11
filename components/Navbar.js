@@ -4,7 +4,9 @@ export default function Navbar() {
       <div className="container mx-auto">
         <div className="item-center flex">
           <div className="flex w-2/12 items-center ">
-            <img src="/meedlelabs-04 1.png" alt="" className="w-full" />
+            <a href="/">
+              <img src="/meedlelabs-04 1.png" alt="" className="w-full" />
+            </a>
           </div>
 
           <div className="flex w-6/12 items-center "></div>
@@ -28,9 +30,9 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="#" className="w-full">
+                <a href="/about" className="w-full ">
                   <svg
-                    className="hover:fill-blue-600 "
+                    className="hover:fill-blue-600 active:fill-blue-600 "
                     width="33"
                     height="35"
                     viewBox="0 0 42 37"
